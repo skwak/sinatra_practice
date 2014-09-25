@@ -8,8 +8,12 @@ class Post < Sinatra::Base
   # create an array of Post objects
   # with the attributes set
   # Post.all => [post, post]
-  def initialize(array)
 
+  attr_accessor :title, :url
+
+  def initialize(array)
+    @title = array[-1].split(".")[0]
+    @url = "/posts/#{@title}"
   end
 
   def self.all
