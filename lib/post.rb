@@ -1,6 +1,8 @@
-class Post 
+require "date"
 
-  attr_accessor :title, :url
+class Post
+
+  attr_accessor :title, :url, :day, :month, :year
 
   def initialize(array)
     @title = array[-1].split(".")[0]
@@ -13,5 +15,9 @@ class Post
       new(a)
     end
   end
+
+  def show_recent
+  end
+
 
 end

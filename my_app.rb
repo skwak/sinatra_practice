@@ -14,10 +14,10 @@ class MyApp < Sinatra::Base
     erb :about
   end
 
-  get "/posts/:name" do
-    @posts = Post.all
+  get "/posts/:title" do
+    # @posts = Post.all
     @title = "SKWAK@ADA BLOG"
-    erb "/posts/#{params[:name]}".to_sym
+    erb "/posts/#{params[:title]}".to_sym
   end
 
   # get "/posts/boom" do

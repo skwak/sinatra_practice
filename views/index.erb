@@ -1,9 +1,15 @@
 <h2>ᕦ☀‿☀ᕤ world of skwak proudly presents ᕦ☀‿☀ᕤ: <br>
-BLOG</h2>
+A BLOG ABOUT EXPERIENCES LEARNING TO CODE</h2>
 
+<div id = "haiku">
+<h2>Read all about it:</h2>
+<% @posts.each do |post| %>
+  <a href = "<%= post.url %>"><%= post.title %></a><br>
+<% end %><br>
+</p>
+</div>
 
-
-<h2>2 haiku about blog</h2>
+<h2>haiku about blogs</h2>
 
 <div id = "haiku">
 <p>do you remember<br>
@@ -12,10 +18,8 @@ before google time?<br><br>
 
 Sinatra, you are: <br>
 domain specific language. <br>
-what does it all mean?</h1>
+what does it all mean?</p>
 </p>
 
-<% @posts.each do |post| %>
-  <a href = "<%= post.url %>"><%=post.title %></a>
-<% end %>
+
 </div>
