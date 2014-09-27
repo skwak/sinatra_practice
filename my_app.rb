@@ -5,7 +5,7 @@ class MyApp < Sinatra::Base
 
   get "/" do
     @posts = Post.most_recent(5)
-    @title = "SKWAK@ADA"
+    @title = "SKWAK@ADA BLOG"
     erb :index
   end
 
