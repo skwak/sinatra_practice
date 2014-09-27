@@ -1,17 +1,19 @@
-<h2>ᕦ☀‿☀ᕤ world of skwak proudly presents ᕦ☀‿☀ᕤ: <br>
-A BLOG ABOUT EXPERIENCES LEARNING TO CODE</h2>
+<h2>ᕦ☀‿☀ᕤ world of skwak proudly presents ᕦ☀‿☀ᕤ:</h2>
+<h2 class="title">A Blog About Learning to Code</h2>
 
 <div id = "haiku">
 <h2>Read all about it:</h2>
+<p>
 <% @posts.each do |post| %>
-  <a href = "<%= post.url %>"><%= post.title %></a><br>
+  <%= post.date %>: <a href="<%= post.url %>"><%= post.title.gsub("-", " ").capitalize %></a><br>
 <% end %><br>
+
 </p>
 </div>
 
 <h2>haiku about blogs</h2>
 
-<div id = "haiku">
+<div id="haiku">
 <p>do you remember<br>
 blogger, owned by pyra labs,<br>
 before google time?<br><br>
