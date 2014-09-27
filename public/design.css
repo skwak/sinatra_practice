@@ -61,7 +61,11 @@ a:hover {
     font-family: "Inconsolata";
     font-size: 20px;
     color: #87a892;
-    text-decoration: underline;
+    background-image: url(squiggle.gif); /*made this using http://alistapart.com/article/customunderlines*/
+    background-repeat: repeat-x;
+    background-position: 100% 100%;
+    padding-bottom: 4px;
+    white-space: nowrap;
 }
 
 ul {
@@ -105,6 +109,11 @@ em {
 
 #haiku {
     text-align: center;
+}
+
+#blogroll {
+    margin: 0 0 0 200px;
+
 }
 
 #footer {

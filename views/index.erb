@@ -1,22 +1,21 @@
 <h2>ᕦ☀‿☀ᕤ world of skwak proudly presents ᕦ☀‿☀ᕤ:</h2>
 <h2 class="title">A Blog About Learning to Code</h2>
 
-<div id = "haiku">
-<h2>Read all about it:</h2>
-<p>
-<% @posts.each do |post| %>
-  <%= post.date %>: <a href="<%= post.url %>"><%= post.title.gsub("-", " ").capitalize %></a><br>
-<% end %><br>
 
+<h2>Read all about it:</h2>
+
+<p id="blogroll">
+<% @posts.each do |post| %>
+  <%= post.date.strftime("%B %d, %Y") %>: <a href="<%= post.url %>"><%= post.title.gsub("-", " ").upcase %></a><br>
+<% end %>
 </p>
-</div>
 
 <h2>haiku about blogs</h2>
 
 <div id="haiku">
 <p>do you remember<br>
-blogger, owned by pyra labs,<br>
-before google time?<br><br>
+Blogger, owned by Pyra Labs,<br>
+before Google Time?<br><br>
 
 Sinatra, you are: <br>
 domain specific language. <br>

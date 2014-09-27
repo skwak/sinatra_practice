@@ -1,5 +1,5 @@
-require 'sinatra'
-require './lib/post'
+require "sinatra"
+require "./lib/post"
 
 class MyApp < Sinatra::Base
 
@@ -8,7 +8,6 @@ class MyApp < Sinatra::Base
     @title = "SKWAK@ADA"
     erb :index
   end
-
 
   get "/about" do
     @title = "SKWAK@ADA BIO"
