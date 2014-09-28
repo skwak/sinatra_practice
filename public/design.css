@@ -2,10 +2,12 @@ html {
   background: url("tiless.jpg") repeat white;
 }
 
-@font-face {
+/*will put in a custom font when I can up with something less hideous :-)*/
+*/@font-face {
     font-family: "skwakfont";
     src: url(hand.ttf) format("truetype");
-}
+}*/
+
 body {
     margin: 50px;
 }
@@ -26,7 +28,7 @@ h2 {
 
 
 .title {
-    font-family: "skwakfont";
+    font-family: "Source Code Pro";
     color: #6CC4FF;
     font-size: 30px;
     text-align: center;
