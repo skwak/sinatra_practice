@@ -4,7 +4,7 @@ html {
 
 @font-face {
     font-family: "skwakfont";
-    src: url(hand.ttf) format("truetype")''
+    src: url(hand.ttf) format("truetype");
 }
 body {
     margin: 50px;
@@ -27,8 +27,8 @@ h2 {
 
 .title {
     font-family: "skwakfont";
-    color: #00000;
-    font-size: 25px;
+    color: #6CC4FF;
+    font-size: 30px;
     text-align: center;
 }
 
