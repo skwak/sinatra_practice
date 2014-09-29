@@ -96,9 +96,11 @@ blockquote {
   font-size: 25px;
   font-style: italic;
   width: 500px;
-  margin: 10px 150px;
   line-height: 120%;
   color: #1b4f8f;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 em {
@@ -124,7 +126,9 @@ em {
 }
 
 #screenshot {
-    margin: 0 0 0 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
 }
 
@@ -141,11 +145,11 @@ em {
 }
 
 #blogroll {
-    margin: 0 0 0 200px;
+    text-align: center;
 }
 
 #playlist {
-    margin: 0 0 0 120px;
+    text-align: center;
 }
 
 #footer {
