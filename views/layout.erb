@@ -11,17 +11,23 @@
 
   <body>
 
-    <div id = "wrap">
-      <img id = "word" src="/word.jpg">
-      <img id = "huh" src="/ada3.gif">
-      <h1><a href="/">HOME</a>&nbsp;<a href="/about">ABOUT</a></h1>
+    <div id="wrap">
+      <img class="wordimg" src="/word.jpg">
+      <img id="animated" alt="animated gif of typing into MS Word" src="/ada3.gif">
+
+      <nav>
+          <a href="/">HOME</a>
+          <a href="/about">ABOUT</a>
+      </nav>
+
       <%= yield %>
 
-    <div id="footer">
-      <h2><a href="mailto:sk@stephaniekwak.com">sk@stephaniekwak.com</a>&nbsp;&nbsp;  <a href="http://www.stephaniekwak.com" target="_blank">stephaniekwak.com</a></h2>
+    <footer>
+      <a href="mailto:sk@stephaniekwak.com">sk@stephaniekwak.com</a> <a href="http://www.stephaniekwak.com" target="_blank">stephaniekwak.com</a>
+    </footer>
 
-    </div>
-      <img id="wordend" src="/bottom.jpg">
+    <img class="wordimg" src="/bottom.jpg">
+
     </div>
 
   </body>

@@ -1,38 +1,43 @@
+/* FOR ALL PAGES */
+
 html {
-  background: url("tiless.jpg") repeat white;
+    background: url("tiless.jpg") repeat white;
 }
 
-/*will put in a custom font when I can up with something less hideous :-)*/
-/*@font-face {
-    font-family: "skwakfont";
-    src: url(hand.ttf) format("truetype");
-}*/
+/*will put in a custom font when I can come up with something less hideous :-)*/
+@font-face {
+    font-family: "bigbold";
+    src: url(bigbold.ttf) format("truetype");
+}
 
 body {
     margin: 50px;
 }
 
-h1 {
-    font-family: "Inconsolata";
-    color: #87a892;
-    font-size: 40px;
+nav, footer {
+    word-spacing: 15px;
+    letter-spacing: 2px;
     text-align: center;
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-family: "Source Code Pro";
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 60px 20px 60px;
 }
 
 h2 {
-    font-family: "Inconsolata";
-    color: #00000;
-    font-size: 20px;
+    font-family: "bigbold";
     text-align: center;
+    margin: 10px 60px 20px 60px;
 }
 
-
-.title {
-    font-family: "Source Code Pro";
-    font-style: italic;
-    color: #468499;
-    font-size: 30px;
+h3 {
+    font-family: "Inconsolata";
     text-align: center;
+    margin: 10px 60px 20px 60px;
 }
 
 p {
@@ -42,29 +47,7 @@ p {
     margin: 0 60px 0 60px;
 }
 
-.tab {
-    font-family: "Inconsolata";
-    font-size: 20px;
-    line-height: 200%;
-    text-indent: 50px;
-    margin: 0 60px 0 60px;
-}
-
-.caption {
-    font-family: "Inconsolata";
-    font-size: 15px;
-    line-height: 200%;
-    text-align: center;
-}
-
-a:link {
-    font-family: "Inconsolata";
-    font-size: 20px;
-    color: #87a892;
-    text-decoration: none;
-}
-
-a:visited {
+a:link, a:visited {
     font-family: "Inconsolata";
     font-size: 20px;
     color: #87a892;
@@ -72,14 +55,58 @@ a:visited {
 }
 
 a:hover {
-    font-family: "Inconsolata";
-    font-size: 20px;
-    color: #87a892;
     background-image: url(squiggle.gif); /*made this using http://alistapart.com/article/customunderlines*/
     background-repeat: repeat-x;
     background-position: 100% 100%;
     padding-bottom: 4px;
     white-space: nowrap;
+}
+
+footer {
+    margin: 30px 0 30px 0;
+}
+
+#wrap {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: -11px 11px 40px -2px rgba(100,90,50,1);
+    overflow: scroll;
+    border: 2px 2px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+img.wordimg {
+    width: 100%;
+}
+
+#haiku {
+    text-align: center;
+}
+
+#animated {
+    margin: 0 auto;
+    width: 300px;
+}
+
+/* FOR THE INDEX */
+
+.title {
+    font-family: "bigbold";
+    font-style: italic;
+    color: #468499;
+    font-size: 80px;
+}
+
+/* FOR ABOUT PAGE + BLOG POSTS */
+
+p.tab {
+    text-indent: 50px;
+}
+
+p.caption {
+    font-size: 15px;
+    text-align: center;
 }
 
 ul {
@@ -90,6 +117,12 @@ ul {
     line-height: 250%;
     margin: 0 60px 0 150px;
 }
+
+#blogroll {
+    text-align: center;
+}
+
+/* FOR BLOG POSTS */
 
 blockquote {
   font-family: "Source Code Pro";
@@ -104,54 +137,16 @@ blockquote {
 }
 
 em {
-    font-family: "Inconsolata";
-    font-size: 20px;
-    color: #000000;
     text-decoration: underline;
 }
 
-#wrap {
-    width: 70%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: -11px 11px 40px -2px rgba(100,90,50,1);
-    overflow: scroll;
-    border: 2px 2px 0 0;
-    border-radius: 5px 5px 0 0;
-}
-
-#huh {
-    margin: 0 auto;
-    width: 300px;
-}
-
-#screenshot {
+img.screenshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
 
-#word {
-    width: 100%;
-}
-
-#wordend {
-    width: 100%;
-}
-
-#haiku {
-    text-align: center;
-}
-
-#blogroll {
-    text-align: center;
-}
-
 #playlist {
     text-align: center;
-}
-
-#footer {
-    margin: 50px 0 0 0;
 }
