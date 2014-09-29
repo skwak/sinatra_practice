@@ -29,7 +29,8 @@ h2 {
 
 .title {
     font-family: "Source Code Pro";
-    color: #6CC4FF;
+    font-style: italic;
+    color: #468499;
     font-size: 30px;
     text-align: center;
 }
