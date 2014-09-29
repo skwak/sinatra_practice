@@ -1,10 +1,14 @@
 /* FOR ALL PAGES */
 
 html {
-    background: url("tiless.jpg") repeat white;
+    background: url("tiless.jpg");
+    background: -webkit-linear-gradient(left top, #ad9bbe, #68d3e4);
+    background: -o-linear-gradient(bottom right, #ad9bbe, #68d3e4);
+    background: -moz-linear-gradient(bottom right, #ad9bbe, #68d3e4);
+    background: linear-gradient(to bottom right, #ad9bbe, #68d3e4);
 }
 
-/*will put in a custom font when I can come up with something less hideous :-)*/
+/*made font using fontstruct.com*/
 @font-face {
     font-family: "befancy";
     src: url(befancy.ttf) format("truetype");
@@ -19,6 +23,18 @@ nav, footer {
     letter-spacing: 2px;
     text-align: center;
     margin: 0 0 20px 0;
+}
+
+nav {
+    position: fixed;
+	  top: 0px;
+	  left: 0px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: -5px 10px 40px -3px rgba(100,80,50,10);
+    border: 2px 2px 0 0;
+    border-radius: 5px 5px 5px 5px;
 }
 
 h1, h2, h3 {
@@ -69,7 +85,7 @@ footer {
     width: 70%;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: -11px 11px 40px -2px rgba(100,90,50,1);
+    box-shadow: -11px 40px 40px -2px rgba(100,90,50,1);
     overflow: scroll;
     border: 2px 2px 0 0;
     border-radius: 5px 5px 0 0;
@@ -77,6 +93,10 @@ footer {
 
 img.wordimg {
     width: 100%;
+}
+
+img.sideimg {
+    width:50px;
 }
 
 #haiku {
