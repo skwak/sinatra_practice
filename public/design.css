@@ -3,7 +3,7 @@ html {
 }
 
 /*will put in a custom font when I can up with something less hideous :-)*/
-*/@font-face {
+/*@font-face {
     font-family: "skwakfont";
     src: url(hand.ttf) format("truetype");
 }*/
@@ -90,6 +90,16 @@ ul {
     margin: 0 60px 0 150px;
 }
 
+blockquote {
+  font-family: "Source Code Pro";
+  font-size: 25px;
+  font-style: italic;
+  width: 500px;
+  margin: 10px 150px;
+  line-height: 120%;
+  color: #1b4f8f;
+}
+
 em {
     font-family: "Inconsolata";
     font-size: 20px;
@@ -110,6 +120,11 @@ em {
 #huh {
     margin: 0 auto;
     width: 300px;
+}
+
+#screenshot {
+    margin: 0 0 0 120px;
+    width: 600px;
 }
 
 #word {
