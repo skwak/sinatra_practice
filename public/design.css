@@ -10,7 +10,7 @@ html {
 
 /*made font using fontstruct.com*/
 @font-face {
-    font-family: "befancy";
+    font-family: "be fancy";
     src: url(befancy.ttf) format("truetype");
 }
 
@@ -29,12 +29,15 @@ nav {
     position: fixed;
 	  top: 0px;
 	  left: 0px;
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
     margin: 20px 20px 20px 20px;
     box-shadow: -5px 10px 40px -3px rgba(100,80,50,10);
     border: 2px 2px 0 0;
     border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7d7171;
 }
 
 h1, h2, h3 {
@@ -85,7 +88,7 @@ footer {
     width: 70%;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: -11px 40px 40px -2px rgba(100,90,50,1);
+    box-shadow: -11px 20px 40px -2px rgba(100,90,50,1);
     overflow: scroll;
     border: 2px 2px 0 0;
     border-radius: 5px 5px 0 0;
@@ -111,11 +114,11 @@ img.sideimg {
 /* FOR THE INDEX */
 
 h2.title {
-    font-family: "befancy";
+    font-family: "be fancy";
     font-style: italic;
     color: #7cc8d8;
     font-size: 50px;
-    text-shadow: 1px 0 0 black, 0 1px 0 black, 0 1px 0 black, 0 1px 0 black;
+    text-shadow: 1px 0 0 #9e9595, 0 1px 0 #9e9595, 0 1px 0 #9e9595, 0 1px 0 #9e9595;
 }
 
 /* FOR ABOUT PAGE + BLOG POSTS */
