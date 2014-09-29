@@ -93,8 +93,9 @@ img.wordimg {
 h2.title {
     font-family: "befancy";
     font-style: italic;
-    color: #468499;
+    color: #7cc8d8;
     font-size: 50px;
+    text-shadow: 1px 0 0 black, 0 1px 0 black, 0 1px 0 black, 0 1px 0 black;
 }
 
 /* FOR ABOUT PAGE + BLOG POSTS */
