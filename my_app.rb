@@ -11,6 +11,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/about" do
+    @recent_posts = Post.most_recent(5)
     @title = "SKWAK@ADA BIO"
     erb :about
   end
