@@ -7,21 +7,8 @@ html {
     background: linear-gradient(to bottom right, #ad9bbe, #68d3e4);
 }
 
-/*made font using fontstruct.com*/
-@font-face {
-    font-family: "be fancy";
-    src: url(../befancy.ttf) format("truetype");
-}
-
 body {
     margin: 50px;
-}
-
-.givespace {
-    word-spacing: 15px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin: 10px;
 }
 
 .sidebars {
@@ -37,49 +24,23 @@ body {
 }
 
 nav {
-	  top: 0;
+    top: 0;
     left: 0;
 }
 
 #blogroll {
-    font-family: "Helvetica";
     text-align: left;
-    font-size: 12px;
-    line-height: 180%;
     position: fixed;
     background-color: #ffffff;
     top: 200px;
     left: 0;
 }
 
-h1, h2, h3 {
-    font-family: "Source Code Pro";
-    text-align: center;
-    margin: 10px 60px 20px 60px;
-}
-
-h1 {
-    font-size: 18px;
-}
-
-h2 {
-    font-size: 16px;
-}
-
-h3 {
-    font-family: "Inconsolata";
-}
-
 p {
-    font-family: "Inconsolata";
-    font-size: 20px;
-    line-height: 200%;
     margin: 0 60px 0 60px;
 }
 
 a:link, a:visited {
-    font-family: "Inconsolata";
-    font-size: 20px;
     color: #87a892;
     text-decoration: none;
 }
@@ -118,13 +79,76 @@ footer {
     width: 300px;
 }
 
-/* FOR THE INDEX */
+
+/* FONTS R US */
+
+/*made font using fontstruct.com*/
+@font-face {
+    font-family: "be fancy";
+    src: url(../befancy.ttf) format("truetype");
+}
 
 .title {
     font-family: "be fancy";
-    font-style: italic;
-    color: #7cc8d8;
     font-size: 50px;
+}
+
+h1, blockquote {
+    font-family: "Source Code Pro";
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.caption {
+    font-size: 16px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+a, p, ul, table {
+    font-family: "Inconsolata";
+}
+
+p, ul, a {
+    font-size: 20px;
+}
+
+p, ul, #blogroll {
+    line-height:200%;
+}
+
+#blogroll {
+    font-family: "Helvetica";
+    font-size: 12px;
+}
+
+/*text, word, margin spacing as necessary*/
+.givespace {
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.gomiddle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+/* FOR THE INDEX */
+
+.title {
+    color: #7cc8d8;
     text-shadow: 1px 0 0 #9e9595, 0 1px 0 #9e9595, 0 1px 0 #9e9595, 0 1px 0 #9e9595;
 }
 
@@ -138,17 +162,9 @@ footer {
 .tab + .tab {
     margin-top: 1.5em; }
 
-.caption {
-    font-size: 15px;
-    text-align: center;
-}
 
 ul {
-    font-family: "Inconsolata";
-    font-size: 20px;
-    color: #000000;
     list-style-type: circle;
-    line-height: 250%;
     margin: 0 60px 0 150px;
 }
 
@@ -161,40 +177,17 @@ article {
 }
 
 blockquote {
-  font-family: "Source Code Pro";
-  font-size: 25px;
-  font-style: italic;
   width: 500px;
-  line-height: 120%;
   color: #1b4f8f;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-em {
-    text-decoration: underline;
-}
-
-.gomiddle {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.blogimage {
-    width: 80%;
-}
-
-#playlist {
-    text-align: center;
+.blogimage, table {
+    width: 600px;
 }
 
 table {
-    font-family: "Inconsolata";
     background-color: #fffcda;
     border-collapse: collapse;
-    width: 80%;
 }
 
 thead {
