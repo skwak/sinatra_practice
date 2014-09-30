@@ -32,14 +32,13 @@ nav {
     text-align: center;
     position: fixed;
     background-color: #ffffff;
-    top: 100px;
+    top: 150px;
     left: 0;
     width: 220px;
 }
 
 p {
     margin: 0 60px 0 60px;
-    padding:20px;
 }
 
 a:link, a:visited {
@@ -73,7 +72,7 @@ footer {
 }
 
 .sideimg {
-    width:50px;
+    width: 50px;
 }
 
 #animated {
@@ -81,6 +80,9 @@ footer {
     width: 300px;
 }
 
+section, article {
+    padding: 20px;
+}
 
 /* FONTS R US */
 
@@ -184,7 +186,7 @@ blockquote {
 }
 
 .blogimage, table {
-    width: 600px;
+    width: 70%;
 }
 
 table {
