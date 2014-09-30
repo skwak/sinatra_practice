@@ -8,6 +8,7 @@ class Post
     @title = array[-1].split(".")[0]
     @date = Date.parse(array[-2])
     @url = "/posts/#{@date}/#{@title}"
+    # @recent = most_recent(n)
   end
 
   def self.all
@@ -20,6 +21,10 @@ class Post
   def self.most_recent(n)
     all.sort_by { |post| post.date }.last(n).reverse
   end
+
+  # def get_next
+  #   most_recent(n).last
+  # end
 
   def pull_posts
     File.read("./views/posts/#{@date}/#{@title}.erb")
