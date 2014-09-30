@@ -18,7 +18,7 @@ class Post
   end
 
   def self.most_recent(n)
-    all.sort_by { |post| post.date }.last(n)
+    all.sort_by { |post| post.date }.last(n).reverse
   end
 
   def pull_posts
