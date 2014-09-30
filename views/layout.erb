@@ -5,7 +5,8 @@
     <title><%= @title %></title>
       <link rel="shortcut icon" href="/favicon.ico">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata|Source+Code+Pro:300" type="text/css">
-      <link rel="stylesheet" href="/design.css" type="text/css">
+      <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+      <link rel="stylesheet" href="/css/design.css" type="text/css">
     </title>
   </head>
 
@@ -13,29 +14,28 @@
 
     <div id="wrap">
       <img class="wordimg" src="/word.jpg">
-      <img id="animated" alt="animated gif of typing into MS Word" src="/ada3.gif">
+      <img id="animated" alt="animated gif" src="/ada3.gif">
 
-      <nav>
-          <a href="/"><img class="sideimg" src="/home.gif"></a>
-          <a href="/about"><img class="sideimg" src="/about.gif"></a>
+      <nav class="givespace sidebars">
+          <a href="/"><img class="sideimg" alt="go to the HOME page" src="/home.gif"></a>
+          <a href="/about"><img class="sideimg" alt="go to the ABOUT page" src="/about.gif"></a>
       </nav>
 
-        <div id="blogroll">
+        <div class="givespace sidebars" id="blogroll">
             <% @recent_posts.each do |post| %>
             <%= post.date.strftime("%B %d, %Y").upcase %>:<br>
             <a href="<%= post.url %>"><%= post.title.gsub("-", " ").upcase %></a><br>
           <% end %>
         </div>
 
-      <%= yield %>
+            <%= yield %>
 
-    <footer>
-      <a href="mailto:sk@stephaniekwak.com">sk@stephaniekwak.com</a> <a href="http://www.stephaniekwak.com" target="_blank">stephaniekwak.com</a>
-    </footer>
-
-    <img class="wordimg" src="/bottom.jpg">
-
+      <footer class="givespace">
+        <a href="mailto:sk@stephaniekwak.com">sk@stephaniekwak.com</a> <a href="http://www.stephaniekwak.com" target="_blank">stephaniekwak.com</a>
+      </footer>
+      <img class="wordimg" src="/bottom.jpg">
     </div>
+
 
   </body>
 
