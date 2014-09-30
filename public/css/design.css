@@ -127,7 +127,7 @@ p, ul, #blogroll {
     line-height:200%;
 }
 
-#blogroll {
+.smalltext {
     font-family: "Helvetica";
     font-size: 12px;
 }
@@ -200,4 +200,17 @@ thead {
 
 td {
     padding: 1em;
+}
+
+/* youtube fluid sizes: http://demosthenes.info/blog/649/Responsive-Design-Create-Fluid-YouTube-and-Vimeo-Content */
+.videowrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.videowrap iframe {
+    width: 80%;
+    height: 80%;
 }

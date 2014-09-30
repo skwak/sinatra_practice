@@ -21,7 +21,7 @@
           <a href="/about"><img class="sideimg" alt="go to the ABOUT page" src="/about.gif"></a>
       </nav>
 
-        <div class="givespace sidebars" id="blogroll">
+        <div class="givespace sidebars smalltext" id="blogroll">
             <em>RECENT POSTS</em>:<br>
             <% @recent_posts.each do |post| %>
               <%= post.date.strftime("%B %d, %Y").upcase %>:<br>
