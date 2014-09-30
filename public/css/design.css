@@ -29,10 +29,10 @@ nav {
 }
 
 #blogroll {
-    text-align: left;
+    text-align: center;
     position: fixed;
     background-color: #ffffff;
-    top: 200px;
+    top: 100px;
     left: 0;
     width: 220px;
 }
