@@ -85,7 +85,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    background-image: url(squiggle.gif); /*made this using http://alistapart.com/article/customunderlines*/
+    background-image: url(../squiggle.gif); /*made this using http://alistapart.com/article/customunderlines*/
     background-repeat: repeat-x;
     background-position: 100% 100%;
     padding-bottom: 4px;
@@ -111,10 +111,6 @@ footer {
 
 .sideimg {
     width:50px;
-}
-
-#haiku {
-    text-align: center;
 }
 
 #animated {
