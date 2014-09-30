@@ -127,7 +127,7 @@ p, ul, #blogroll {
     line-height:200%;
 }
 
-.smalltext {
+.smalltext, #blogroll a {
     font-family: "Helvetica";
     font-size: 12px;
 }
