@@ -22,14 +22,13 @@ nav, footer, #blogroll {
     word-spacing: 15px;
     letter-spacing: 2px;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 10px;
 }
 
 nav, #blogroll {
     position: fixed;
     background-color: #ffffff;
     padding: 10px;
-    margin: 10px 10px 10px 10px;
     box-shadow: -5px 10px 40px -3px rgba(100,80,50,10);
     border: 2px 2px 0 0;
     border-radius: 5px 5px 5px 5px;
@@ -37,9 +36,10 @@ nav, #blogroll {
     border-width: 1px;
     border-color: #7d7171;
 }
+
 nav {
 	  top: 0;
-	  left: 0;
+    left: 0;
 }
 
 #blogroll {
@@ -102,16 +102,16 @@ footer {
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: -11px 20px 40px -2px rgba(100,90,50,1);
-    overflow: scroll;
+    /*overflow: scroll;*/
     border: 2px 2px 0 0;
     border-radius: 5px 5px 0 0;
 }
 
-img.wordimg {
+.wordimg {
     width: 100%;
 }
 
-img.sideimg {
+.sideimg {
     width:50px;
 }
 
@@ -126,7 +126,7 @@ img.sideimg {
 
 /* FOR THE INDEX */
 
-h2.title {
+.title {
     font-family: "be fancy";
     font-style: italic;
     color: #7cc8d8;
@@ -137,11 +137,13 @@ h2.title {
 
 /* FOR ABOUT PAGE + BLOG POSTS */
 
-p.tab {
-    text-indent: 50px;
+.tab {
+    text-indent: 60px;
 }
 
-p.caption {
+.tab + .tab { margin-top: 1.5em; }
+
+.caption {
     font-size: 15px;
     text-align: center;
 }
@@ -174,11 +176,11 @@ em {
     text-decoration: underline;
 }
 
-img.screenshot {
+.screenshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 600px;
 }
 
 #playlist {
