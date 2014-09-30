@@ -4,7 +4,8 @@ require "./lib/post"
 class MyApp < Sinatra::Base
 
   get "/" do
-    @posts = Post.most_recent(5)
+    @recent_posts = Post.most_recent(5)
+    @posts = Post.all
     @title = "SKWAK@ADA BLOG"
     erb :index
   end

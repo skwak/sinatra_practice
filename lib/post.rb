@@ -20,4 +20,9 @@ class Post
   def self.most_recent(n)
     all.sort_by { |post| post.date }.last(n)
   end
+
+  def pull_posts
+    File.read("./views/posts/#{@date}/#{@title}.erb")
+  end
+
 end

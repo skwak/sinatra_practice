@@ -20,6 +20,13 @@
           <a href="/about"><img class="sideimg" src="/about.gif"></a>
       </nav>
 
+        <div id="blogroll">
+            <% @recent_posts.each do |post| %>
+            <%= post.date.strftime("%B %d, %Y").upcase %>:<br>
+            <a href="<%= post.url %>"><%= post.title.gsub("-", " ").upcase %></a><br>
+          <% end %>
+        </div>
+
       <%= yield %>
 
     <footer>
