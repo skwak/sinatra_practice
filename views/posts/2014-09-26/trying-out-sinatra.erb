@@ -1,17 +1,18 @@
-<p>September 26, 2014</p>
+<article>
+  <p>September 26, 2014</p>
 
-<div id="playlist"><iframe width="700" height="400" src="//www.youtube.com/embed/videoseries?list=PLanvKbpjZonS_F8XLEyvoNbrsPWP_UsPH" frameborder="0" allowfullscreen></iframe></div>
+  <p class="givespace"><iframe width="700" height="400" src="//www.youtube.com/embed/videoseries?list=PLanvKbpjZonS_F8XLEyvoNbrsPWP_UsPH" frameborder="0" allowfullscreen></iframe></p>
 
-<p class="caption">A playlist to help make this blog a Dance Party of the Mind.</p>
+  <p class="caption">A playlist to help make this blog a Dance Party of the Mind.</p>
 
-<p class="tab">Today I will be writing about what we have been exploring this
+  <p class="tab">Today I will be writing about what we have been exploring this
 week: <a href="http://www.sinatrarb.com/" target = "_blank"> Sinatra</a>. Sinatra
 is apparently a web application library and Domain-Specific Language
 (<a href="http://en.wikipedia.org/wiki/Domain-specific_language" target="_blank">DSL</a>)
 that uses Ruby. What exactly is a Domain-Specific Language, you ask? Uh,
 I'm not sure really, either, so let me look that up for you...</p>
 
-<p class="tab">Apparently, DSLs have been around <a href="http://martinfowler.com/books/dsl.html" target="_blank">
+  <p class="tab">Apparently, DSLs have been around <a href="http://martinfowler.com/books/dsl.html" target="_blank">
 for a long time</a>. HTML is considered domain-specific, as it's meant to markup
 text on webpages. Sinatra is a DSL because it is meant to create web applications
 in Ruby, so it has a very specific use, too. Sinatra is also a <a href="http://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Ruby" target="_blank">
@@ -20,7 +21,7 @@ like Ruby on Rails. I've seen names like Django and AngularJS, and I've often
 wondered what they were, and they're also frameworks, but for Python (Django) and
 JavaScript (AngualarJS).</p>
 
-<p class="tab">So why use Sinatra? It seems like people like to use it for
+  <p class="tab">So why use Sinatra? It seems like people like to use it for
 <a href="http://stackoverflow.com/questions/545254/sinatra-success-stories" target="_blank">
 smaller</a>, single-function apps and because it's considered simple (not to me
 just yet, though!) and elegant (I guess I will need to compare Sinatra to something
@@ -30,7 +31,7 @@ various languages: Ruby, <a href="http://www.tutorialspoint.com/ruby/eruby.htm" 
 Embedded Ruby</a>, HTML, and CSS</a>. Sinatra also supports the use of other languages
 like Haml and Markdown, but I am not currently using anything else in the app.</p>
 
-<p class="tab">The use of HTML and CSS hasn't been that confusing to me because
+  <p class="tab">The use of HTML and CSS hasn't been that confusing to me because
 I was briefly a teenage web <a href="../2014-09-25/learning-styles">cavegirl</a>,
 but the use of Ruby and Embedded Ruby in Sinatra does make me go "Wuuuh".
 What should I put in the app.rb file? What should I put in that Ruby file in
@@ -38,7 +39,7 @@ the /lib folder? When should I use Embedded Ruby? What is the meaning of life??
 That last question I can't answer at all, but I can probably string a few
 sentences to answer the first few ones.</p>
 
-<p class="tab"><em>app.rb</em>: I call it this because that's what people on the
+  <p class="tab"><em>app.rb</em>: I call it this because that's what people on the
 Interwubs seem to call it a lot of times, but yours could be called something
 different, like if you are a Satanist or something you could call it
 "666.rb" or if you are a Consantly Confused-ist, you could call it "huh.rb". It's
@@ -47,44 +48,43 @@ people who are on your application can go places and do things. Since it's
 your main place to put Very Important Stuff, you should probably call it "app.rb"
 or "name_of_your_app.rb".</p>
 
-<p class="tab">You can also call on class methods or instance variables that you
+  <p class="tab">You can also call on class methods or instance variables that you
 set in your lib/whatever_you_wanna_call_it.rb file; just make sure you require
 that file at the top of app.rb after you require Sinatra. You can also call on
 instance variables that you set right in app.rb. For instance, I set @title so
 that I could change what goes in between the <a href="http://moz.com/learn/seo/title-tag" target="_blank">
 HTML title tags</a> on different pages of my site.</p>
 
-<p class="tab">My app.rb (called "my_app.rb" after <a href="http://adadevelopersacademy.org/about" traget="_blank">
+  <p class="tab">My app.rb (called "my_app.rb" after <a href="http://adadevelopersacademy.org/about" traget="_blank">
 Bookis'</a> example) looks like this:</p>
 
-<img class="screenshot" src="../../images/screenshot-app.jpg">
+  <img class="gomiddle blogimage" src="../../images/screenshot-app.jpg">
 
-<p class="tab">I'm still wrapping my head around what exactly params <em>are</em>,
+  <p class="tab">I'm still wrapping my head around what exactly params <em>are</em>,
 and this <a href="http://stackoverflow.com/questions/6885990/rails-params-explained" target="_blank">
 Stack Overflow</a> comment is really helping me:</p>
 
-<blockquote>
-"In HTTP/HTML, the params are really just a series of key-value pairs where the
-key and the value are strings, but Ruby on Rails has a special syntax for making
-the params be a hash with hashes inside." - David Grayson on Stack Overflow
-</blockquote>
+  <blockquote>"In HTTP/HTML, the params are really just a series of key-value pairs
+where the key and the value are strings, but Ruby on Rails has a special syntax
+for making the params be a hash with hashes inside." - David Grayson on Stack
+Overflow.</blockquote>
 
-<p class="tab">Cool! And nice to know that params are in Rails, which we'll be learning
+  <p class="tab">Cool! And nice to know that params are in Rails, which we'll be learning
 about soon. Soooo, I put params in the route to individual blog posts, which
 all have a date and title in the URL, but since I don't know exactly what the
 URLs will be for all my future blog posts, I can use the params[:date] and
 params[:title] as keys to get values from, for instance, 2014-09-19 and "first-entry".
-</p>
+  </p>
 
-<p class="tab">Okay, so I've covered a little bit about that app.rb. Let's move to that
+  <p class="tab">Okay, so I've covered a little bit about that app.rb. Let's move to that
 <em>lib/whatever_you_wanna_call_it.rb</em>. This Ruby file is in the lib directory (note:
 a helpful overview of Sinatra's file structure can be found on <a href="http://blog.bolmaster2.com/building-web-apps-with-sinatra-my-basic-setup/" target="_blank">
 Joel Larsson's blog</a>). This lib/whatever_you_wanna_call_it.rb looks the most Ruby-ish
 of all the various files, and this is what mine looks like:</p>
 
-<img class="screenshot" src="../../ruby.jpg">
+  <img class="gomiddle blogimage" src="../../ruby.jpg">
 
-<p class="tab">You can put models and helpers into your lib directory. I don't actually
+  <p class="tab">You can put models and helpers into your lib directory. I don't actually
 know what those are, but that is what I've read. I just have a post.rb file in lib
 which initializes blog post objects as having a title, URL, and date. I also have a
 class method, self.most_recent(n), to sort the blog posts by date. Basically, I have
@@ -92,15 +92,15 @@ instance variables and class methods set here which will gather my blog posts, i
 these blog posts with a URL, date, title, and sort them so that they can sit pretty on my
 index page. I can probably do more with this, but baby steps, baby steps.</p>
 
-<p class="tab">So now let's move onto <em>.erb files</em>. A .erb file is an HTML file
+  <p class="tab">So now let's move onto <em>.erb files</em>. A .erb file is an HTML file
 with Ruby code embedded inside. As you can see from my screenshot of my index.erb, my
 index is mostly HTML with a lil Embedded Ruby. That lil Embedded Ruby, with a lil
 block work, can take each blog post, display the post date, and link to the
 blog post URL using the blog title.</p>
 
-<img class="screenshot" src="../../images/my-index.jpg">
+  <img class="gomiddle blogimage" src="../../images/my-index.jpg">
 
-<p class="tab">With a lil Embedded Ruby, I also have the blog date
+  <p class="tab">With a lil Embedded Ruby, I also have the blog date
 and title to display in a more readable way (it'll take the date "2014-09-19" and display
 it as "September 19, 2014", for instance, and it'll take the title "first-entry" and display
 it as "FIRST ENTRY"). I had tried to make a method in lib/post.rb to change how the title
@@ -110,3 +110,5 @@ use gsub in the block. I guess while writing a method to change how my title or 
 display is possible (don't quote me on that, though), it does make more sense - at least
 now - to put a simple manipulation of how something looks on the index page using Embedded
 Ruby in the thing itself.</p>
+
+</article>

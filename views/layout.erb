@@ -22,6 +22,7 @@
       </nav>
 
         <div class="givespace sidebars" id="blogroll">
+            <em>5 MOST RECENT POSTS</em>:<br>
             <% @recent_posts.each do |post| %>
             <%= post.date.strftime("%B %d, %Y").upcase %>:<br>
             <a href="<%= post.url %>"><%= post.title.gsub("-", " ").upcase %></a><br>
