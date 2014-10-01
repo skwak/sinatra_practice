@@ -216,7 +216,7 @@ td {
     padding: 1em;
 }
 
-/* youtube fluid sizes: http://demosthenes.info/blog/649/Responsive-Design-Create-Fluid-YouTube-and-Vimeo-Content */
+/* info about how to make youtube videos fluid sizes: http://demosthenes.info/blog/649/Responsive-Design-Create-Fluid-YouTube-and-Vimeo-Content */
 .videowrap {
     position: relative;
     padding-bottom: 56.25%;
@@ -227,4 +227,9 @@ td {
 .videowrap iframe {
     width: 80%;
     height: 80%;
+}
+
+/* prevents flicker on page load; thanks Stack Overflow! */
+.hide {
+    display: none;
 }
