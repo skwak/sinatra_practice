@@ -55,6 +55,7 @@ a:hover {
 }
 
 footer {
+    padding-top: 50px;
     margin: 30px 0 30px 0;
 }
 
@@ -104,12 +105,12 @@ h1, h2, blockquote {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 h2, .caption {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h2 {
@@ -193,7 +194,13 @@ blockquote {
 }
 
 .blog-image, table {
-    width: 70%;
+  width: 70%;
+}
+
+.blog-title {
+  background-color: #f0f0f0;
+  margin-left: 20px;
+  margin-right: 50px;
 }
 
 table {
