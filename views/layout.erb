@@ -7,21 +7,23 @@
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata|Source+Code+Pro:300" type="text/css">
       <link rel="stylesheet" href="/css/normalize.css" type="text/css">
       <link rel="stylesheet" href="/css/design.css" type="text/css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="/script/script.js"></script>
     </title>
   </head>
 
   <body>
 
     <div id="wrap">
-      <img class="wordimg" src="/word.jpg">
-      <img class="gomiddle" id="animated" alt="animated gif" src="/ada3.gif">
+      <img class="word-img" src="/word.jpg">
+      <img class="go-middle" id="animated" alt="animated gif" src="/ada3.gif">
 
-      <nav class="givespace sidebars">
-          <a href="/"><img class="sideimg" alt="go to the HOME page" src="/home.gif"></a>
-          <a href="/about"><img class="sideimg" alt="go to the ABOUT page" src="/about.gif"></a>
+      <nav class="give-space side-bars">
+          <a href="/"><img class="side-img" alt="go to the HOME page" src="/home.gif"></a>
+          <a href="/about"><img class="side-img" alt="go to the ABOUT page" src="/about.gif"></a>
       </nav>
 
-        <div class="givespace sidebars smalltext" id="blogroll">
+        <div class="give-space side-bars small-text" id="blogroll">
             <em>RECENT POSTS</em>:<br>
             <% @recent_posts.each do |post| %>
               <%= post.date.strftime("%B %d, %Y").upcase %>:<br>
@@ -29,12 +31,14 @@
           <% end %>
         </div>
 
+        <div id="accordion">
             <%= yield %>
+        </div>
 
-      <footer class="givespace textcenter">
+      <footer class="give-space text-center">
         <a href="mailto:sk@stephaniekwak.com">sk@stephaniekwak.com</a> <a href="http://www.stephaniekwak.com" target="_blank">stephaniekwak.com</a>
       </footer>
-      <img class="wordimg" src="/bottom.jpg">
+      <img class="word-img" src="/bottom.jpg">
     </div>
 
 

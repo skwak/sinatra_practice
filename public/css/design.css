@@ -11,7 +11,7 @@ body {
     margin: 50px;
 }
 
-.sidebars {
+.side-bars {
     position: fixed;
     background-color: #ffffff;
     padding: 10px;
@@ -67,13 +67,13 @@ footer {
     box-shadow: -11px 20px 40px -2px rgba(100,90,50,1);
 }
 
-.wordimg {
+.word-img {
     width: 100%;
     border: 2px;
     border-radius: 7px 7px 0 0;
 }
 
-.sideimg {
+.side-img {
     width: 50px;
 }
 
@@ -99,7 +99,7 @@ section, article {
     font-size: 50px;
 }
 
-h1, blockquote {
+h1, h2, blockquote {
     font-family: "Source Code Pro";
 }
 
@@ -107,8 +107,13 @@ h1 {
     font-size: 18px;
 }
 
-.caption {
+h2, .caption {
+    text-align: center;
     font-size: 16px;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 blockquote {
@@ -129,25 +134,25 @@ p, ul, #blogroll {
     line-height:200%;
 }
 
-.smalltext, #blogroll a {
+.small-text, #blogroll a {
     font-family: "Helvetica";
     font-size: 12px;
 }
 
 /*text, word, margin spacing as necessary*/
-.givespace {
+.give-space {
     word-spacing: 15px;
     letter-spacing: 2px;
     margin: 10px;
 }
 
-.gomiddle {
+.go-middle {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.textcenter {
+.text-center {
     text-align: center;
 }
 
@@ -187,7 +192,7 @@ blockquote {
   color: #1b4f8f;
 }
 
-.blogimage, table {
+.blog-image, table {
     width: 70%;
 }
 
