@@ -231,8 +231,11 @@ td {
 }
 
 .videowrap iframe {
-    width: 80%;
-    height: 80%;
+    position: absolute;
+	  top: 0;
+	  left: 50px;
+	  width: 80%;
+	  height: 80%;
 }
 
 /* display will change to 'none' on the index to prevent page load flicker*/
