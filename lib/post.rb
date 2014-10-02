@@ -24,7 +24,7 @@ class Post
   # def sort_all_posts
   #   @pages = all.sort_by { |post| post.date }.reverse
   # end
-  #
+
   # def pagination(page=1, per_page=3)
   #   sort_all_posts
   #   @pages.each_slice(per_page).to_a[page-1]

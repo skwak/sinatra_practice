@@ -56,6 +56,7 @@ a:hover {
 
 footer {
     padding-top: 50px;
+    padding-bottom: 20px;
     margin: 30px 0 30px 0;
 }
 
@@ -64,11 +65,11 @@ footer {
     margin: 0 auto;
     background-color: #ffffff;
     border: 2px;
-    border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 5px 5px;
     box-shadow: -11px 20px 40px -2px rgba(100,90,50,1);
 }
 
-.word-img {
+.terminal-img {
     width: 100%;
     border: 2px;
     border-radius: 7px 7px 0 0;
@@ -159,7 +160,6 @@ p, ul, #blogroll {
     color: #7cc8d8;
     text-shadow: 1px 0 0 #9e9595, 0 1px 0 #9e9595, 0 1px 0 #9e9595, 0 1px 0 #9e9595;
 }
-
 
 /* FOR ABOUT PAGE + BLOG POSTS */
 
