@@ -1,34 +1,18 @@
-
-
 $(document).ready(function() {
   var each_post = $(".content");
-  // if (!$('div#home').length) return;
+  if (!$('#home').length) return;
     $(each_post).hide("slow");
-    $(".blog-title").click(function(event) {
-      event.preventDefault();
+    $(".hide").css("display", "none");
+    $(".blog-title").click(function() {
       $(this).next(each_post).slideToggle("slow");
 
 
+
   // } else {
-  //     $(".hide").css("display", "block");
-  //   $(each_post).show();
-  // }
 
-
+// if (!$('#home').length) return;
+    // $(each_post).show();
+      // $(".hide").css("display", "block");
+// }
 });
 });
-// $('.thumb').addClass('new');
-// callmeman();
-//
-//  $('#Button').click(function () {
-//      $('.thumb').removeClass('new');
-//      callmeman();
-//  });
-//
-//  function callmeman(){
-//      if ($('.thumb').hasClass('new')) {
-//          $('.info-top').hide();
-//       } else {
-//          $('.info-top').show();
-//      }
-//  }

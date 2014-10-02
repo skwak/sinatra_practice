@@ -224,6 +224,7 @@ td {
     height: 0;
     overflow: hidden;
 }
+
 .videowrap iframe {
     width: 80%;
     height: 80%;
@@ -231,5 +232,5 @@ td {
 
 /* prevents flicker on page load; thanks Stack Overflow! */
 .hide {
-    display: none;
+    display: block;
 }
