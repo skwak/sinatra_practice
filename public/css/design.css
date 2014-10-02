@@ -92,12 +92,12 @@ section, article {
 /*made font using fontstruct.com*/
 @font-face {
     font-family: "be fancy";
-    src: url(../befancy.ttf) format("truetype");
+    src: url(../forgetful.ttf) format("truetype");
 }
 
 .title {
     font-family: "be fancy";
-    font-size: 70px;
+    font-size: 60px;
 }
 
 h1, h2, blockquote {
