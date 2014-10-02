@@ -4,7 +4,6 @@ $(document).ready(function() {
     $(each_post).hide("slow");
     $(".hide").css("display", "none");
     $(".blog-title").click(function() {
-      $(this).next(each_post).slideToggle("slow");
-
-});
+      $(this).next(each_post).slideToggle("fast");
+  });
 });
