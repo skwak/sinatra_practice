@@ -113,10 +113,6 @@ h2, .caption {
     font-size: 20px;
 }
 
-h2 {
-    text-decoration: underline;
-}
-
 blockquote {
     font-style: italic;
     font-size: 25px;
@@ -184,23 +180,29 @@ ul {
 /* FOR BLOG POSTS */
 
 article {
-  margin-top: 1em;
-  width:100%;
+    margin-top: 1em;
+    width:100%;
 }
 
 blockquote {
-  width: 500px;
-  color: #1b4f8f;
+    width: 500px;
+    color: #1b4f8f;
 }
 
 .blog-image, table {
-  width: 70%;
+    width: 70%;
 }
 
 .blog-title {
-  background-color: #f0f0f0;
-  margin-left: 20px;
-  margin-right: 50px;
+    background-color: #ededed;
+    padding: 20px 20px 20px 20px;
+    margin-left: 50px;
+    margin-right: 80px;
+    box-shadow: -1px 10px 10px -10px rgba(100,90,50,1);
+}
+
+.blog-title:hover {
+    background-color: #d8fcff;
 }
 
 table {
