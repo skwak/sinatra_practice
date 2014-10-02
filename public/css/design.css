@@ -96,12 +96,12 @@ section, article {
 }
 
 .title {
-    font-family: "be fancy";
+    font-family: "be fancy", "Helvetica";
     font-size: 60px;
 }
 
 h1, h2, blockquote {
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro", "Helvetica";
 }
 
 h1 {
@@ -120,7 +120,7 @@ blockquote {
 }
 
 a, p, ul, table {
-    font-family: "Inconsolata";
+    font-family: "Inconsolata", "Helvetica";
 }
 
 p, ul, a {
@@ -198,7 +198,10 @@ blockquote {
     padding: 20px 20px 20px 20px;
     margin-left: 50px;
     margin-right: 80px;
-    box-shadow: -1px 10px 10px -10px rgba(100,90,50,1);
+    box-shadow: -5px 11px 6px -10px rgba(100,90,50,1);
+    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    transition-timing-function: ease;
 }
 
 .blog-title:hover {

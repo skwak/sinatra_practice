@@ -8,7 +8,6 @@ class Post
     @title = array[-1].split(".")[0]
     @date = Date.parse(array[-2])
     @url = "/posts/#{@date}/#{@title}"
-    # @recent = most_recent(n)
   end
 
   def self.all
@@ -22,8 +21,17 @@ class Post
     all.sort_by { |post| post.date }.last(n).reverse
   end
 
-  # def get_next
-  #   most_recent(n).last
+  # def sort_all_posts
+  #   @pages = all.sort_by { |post| post.date }.reverse
+  # end
+  #
+  # def pagination(page=1, per_page=3)
+  #   sort_all_posts
+  #   @pages.each_slice(per_page).to_a[page-1]
+  # end
+  #
+  # def pages(per_page=3)
+  #   (count/per_page.to_f).ceil
   # end
 
   def pull_posts
