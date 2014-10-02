@@ -230,7 +230,7 @@ td {
     height: 80%;
 }
 
-/* prevents flicker on page load; thanks Stack Overflow! */
+/* display will change to 'none' on the index to prevent page load flicker*/
 .hide {
     display: block;
 }

@@ -6,13 +6,5 @@ $(document).ready(function() {
     $(".blog-title").click(function() {
       $(this).next(each_post).slideToggle("slow");
 
-
-
-  // } else {
-
-// if (!$('#home').length) return;
-    // $(each_post).show();
-      // $(".hide").css("display", "block");
-// }
 });
 });
