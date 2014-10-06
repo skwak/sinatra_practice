@@ -187,6 +187,8 @@ article {
 }
 
 blockquote {
+    margin-left:auto;
+    margin-right:auto;
     width: 500px;
     color: #1b4f8f;
 }
@@ -223,11 +225,11 @@ td {
     padding: 1em;
 }
 
-/* info about how to make youtube videos fluid sizes: http://demosthenes.info/blog/649/Responsive-Design-Create-Fluid-YouTube-and-Vimeo-Content */
+/* info about how to make youtube videos fluid sizes: http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php   */
 .videowrap {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px;
+    padding-top: 2em;
     height: 0;
     overflow: hidden;
 }
@@ -235,7 +237,7 @@ td {
 .videowrap iframe {
     position: absolute;
 	  top: 0;
-	  left: 50px;
+	  left: 4em;
 	  width: 80%;
 	  height: 80%;
 }

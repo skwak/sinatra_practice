@@ -21,18 +21,13 @@ class Post
     all.sort_by { |post| post.date }.last(n).reverse
   end
 
-  # def sort_all_posts
-  #   @pages = all.sort_by { |post| post.date }.reverse
-  # end
+  def self.sort_all
+    all.sort_by { |post| post.date }.reverse
+  end
 
-  # def pagination(page=1, per_page=3)
-  #   sort_all_posts
-  #   @pages.each_slice(per_page).to_a[page-1]
-  # end
-  #
-  # def pages(per_page=3)
-  #   (count/per_page.to_f).ceil
-  # end
+  def self.page_arrays
+    sort_all.each_slice(2).to_a
+  end
 
   def pull_posts
     File.read("./views/posts/#{@date}/#{@title}.erb")
