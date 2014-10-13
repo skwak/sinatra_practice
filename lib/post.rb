@@ -25,10 +25,6 @@ class Post
     all.sort_by { |post| post.date }.reverse
   end
 
-  def self.page_arrays
-    sort_all.each_slice(2).to_a
-  end
-
   def pull_posts
     File.read("./views/posts/#{@date}/#{@title}.erb")
   end

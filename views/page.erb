@@ -1,7 +1,5 @@
 
 
-<% @page_slices[@page_number].each do |page| %>
-  <%= page.pull_posts %>
+<% @pages.each do |post| %>
+  <%= post.pull_posts %>
 <% end %>
-
-<a href="page/<%= @page_number + 1%>">next</a>

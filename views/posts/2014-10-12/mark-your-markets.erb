@@ -1,0 +1,84 @@
+<article>
+
+    <h2 class="blog-title">OCTOBER 12, 2014: MARK YOUR MARKETS</h2>
+
+    <div class="content hide">
+
+    <div class="videowrap give-space text-center">
+      <iframe src="//www.youtube.com/embed/videoseries?list=PLanvKbpjZonQgl_EOKcu7carrM2ed1tcb" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p class="tab">
+      ↑ Yet another playlist to keep me motivated.
+    </p>
+
+    <p class="tab">
+      I wanted to learn to map in order tackle something that was discussed in a
+      meetup I went to last week at Tech Diversified, <a href="http://www.meetup.com/Tech-Diversified/events/207026532/" target="_blank">
+      "The Power of APIs"</a>. Ryan Whitley gave a fantastic presentation about
+      APIs. I'm still hazy about what exactly an API is, but I now know that they're
+      one way for a program to talk to another program and get information from
+      that other program, and in the workshop, Ryan showed us an example of how
+      to map data using a little JavaScript, JSON, HTML, CSS, and some <a href="https://data.seattle.gov/" target="_blank">data.seattle.gov</a>
+      goodness.</p>
+
+    <p class="tab">
+      So I rolled up my sleeves this weekend and realized wow, mapping is way harder
+      than I thought. But you know what is actually pretty easy? Getting JSON output in Rails.
+      I wanted to map the location of farmers markets as part of our class project,
+      and this was all I had to do in the Markets Controller to get information that was
+      already there as a JSON file:
+    </p>
+
+    <img class="go-middle blog-image" src="../../images/json.jpg">
+
+    <p class="tab">
+      ...And beautiful (though compact) <a href="http://gothcow.herokuapp.com/markets.json" target="_blank">
+      markets.json</a> was born! I was feeling really good about this and realized
+      oh no, the example that Ryan showed us used latitude and longitude coordinates.
+      How was I supposed to convert market address information into coordinates?
+      Would I have to ask each person who made a market in the app to supply
+      coordinates for me?? After going nearly insane reading Google Maps and
+      Google Geocoding (Geocoding, by the way, is converting addresses into
+      geographic coordinates that then can be mapped) API documentation, I found
+      the <a href="https://github.com/alexreisner/geocoder" target="_blank">Geocoder</a>
+      gem for rails.
+    </p>
+
+    <p class="tab">
+      I then followed the Geocoder README instructions, did a database migration,
+      and added latitude and longitude columns into my markets database (they are
+      floats, btw!). I then went into the Market model and specified that I wanted
+      the <em>address</em> column of the market database table to be geocoded!
+    </p>
+
+    <img class="go-middle blog-image" src="../../images/market.jpg">
+
+    <p class="tab">
+      This means that when a vendor makes a new market and adds an address (and
+      does not put any geographic coordinates), that address is geocoded into
+      latitude and longitude coordinates. Brilliant!
+    </p>
+
+    <p class="tab">
+      Next, I went through the <a href="http://leafletjs.com/examples/quick-start.html" target="_blank">
+      Leaflet quick start</a> and made a map tile layer using <a href="https://www.mapbox.com/" target="_blank">
+      Mapbox</a> (This wasn't as easy as it sounds, as I waded through a ton of
+      information before figuring out a way to place in that map title layer).
+    </p>
+
+    <p class="tab">
+      Then, borrowing heavily from Ryan's example, I went in and called on the
+      JSON object, the one with market information, and looped through the market
+      information, placing a mark at each latitude-longitude coordinate.
+    </p>
+
+    <img class="go-middle blog-image" src="../../images/javascript-json.jpg">
+
+    <p class="tab">
+      And voila! A map, though slow to load, <a href="http://gothcow.herokuapp.com/markets" target="_blank">
+      appeared</a>. (note: I implemented this map on a Twilight Zone version of the project
+      Kristinia &amp; have been working on, as I got sick one day and wanted to
+      catch up by trying to re-create steps)
+    </p> 
+</article>

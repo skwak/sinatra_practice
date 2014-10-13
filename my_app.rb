@@ -5,8 +5,6 @@ class MyApp < Sinatra::Base
   before do
     @recent_posts = Post.most_recent(5)
     @posts = Post.all
-    @page_slices = Post.page_arrays
-    @page_number = 0 
 
   end
 
