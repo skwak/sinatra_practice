@@ -5,22 +5,11 @@ class MyApp < Sinatra::Base
   before do
     @recent_posts = Post.most_recent(5)
     @posts = Post.all
-
   end
 
   get "/" do
     @title = "SKWAK@ADA BLOG"
     erb :index
-  end
-
-  get "/:page" do
-    @title = "page test"
-    erb :page
-  end
-
-  get "/:page/:page_number" do
-    @title = "page"
-    erb "/page/params[#{@page_number}]"
   end
 
   get "/about" do
