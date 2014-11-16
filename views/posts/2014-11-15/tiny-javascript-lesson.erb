@@ -1,0 +1,78 @@
+<article>
+
+    <h2 class="blog-title">NOVEMBER 15, 2014: TINY JAVASCRIPT LESSON</h2>
+
+    <div class="content hide">
+
+      <div class="videowrap give-space text-center">
+        <iframe src="//www.youtube.com/embed/YS87mPfD_yI?list=PLanvKbpjZonR3AYfBHC95ltjRMNlT10P7" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p class="tab">
+        ↑ Pumping Energy Into The Little Bloggy That Could.
+      </p>
+
+      <p class="tab">
+        Long time no blog!
+      </p>
+
+      <p class="tab">
+        <a href="http://sorry.coryarcangel.com/" target="_blank">Sorry I haven't posted</a>, but I have been busy, blah,
+        blah, blah. Some things I have done since my last blog post:
+        <ul>
+          <li>Made a Rails app, <a href="http://betsy-rails.herokuapp.com" target="_blank">sCRAPs</a>, with Holly, Kamilah, and Kristen.</li>
+          <li>Made another Rails app, <a href="http://f-o-r-t-u-n-a.herokuapp.com" target="_blank">Fortuna</a>, a mean-spirited fortune telling app.</li>
+          <li>Met up with 3 mentors.</li>
+          <li>Set up a <a href="http://www.twitter.com/kwakietalkie" target="_blank">Twitter bot</a>.</li>
+          <li>Made a JavaScript To Do list called...um, <a href="http://www.stephaniekwak.com/todo/todolist.html">todolist</a>.</li>
+        </ul>
+      </p>
+
+      <p class="tab">
+        I worked on that last item very recently -- last week, in fact! <a href="http://elisabethrobson.com/">Elisabeth Robson</a> guest lectured
+        about JavaScript and jQuery at Ada, and we got set on our very first week of All JavaScript, All the Time.
+      </p>
+
+      <p class="tab">
+        While I took an immediate liking to JavaScript, mostly because I can see the fruits of my code pretty much instantly
+        (or not so instantly), the very small part of my brain that had become Ruby-f(r)ied got confused with the way the code was
+        looking on <a href="http://www.stephaniekwak.com/todo/todolist.html" target="_blank">todolist</a>. While Ruby code tends to be compact and
+        like a neat, color-coded file folder full of neat, little compartments for you to put your papers in, my JavaScript code seemed
+        to be a heap of knick knacks piled on top of each other. <a href="http://stephaniekwak.com/todo/todolist.js" target="_blank">Wanna see?</a>
+      </p>
+
+      <p class="tab">
+        This apparently has something to do with the fact that JavaScript is often
+        <a href="http://en.wikipedia.org/wiki/Event-driven_programming" target="_blank">event-driven</a>, meaning that code doesn't
+        run until something triggers it - for instance, a click on a button.
+      </p>
+
+      <p class="tab">
+        When you click on any list element, the clickHandler() function will do its thing; in this case,
+        the doing-its-thing removes the class of "not-done" and adds the class of "done" to that particular list element (referred to as
+        'this').
+      </p>
+
+      <p class="tab">
+        I ran into a bug, however, in my clickToShow(event) function, which was triggered by a click on a button with a "showButton" class.
+        The clickToShow(event) function is meant to enlarge the task that is clicked (by toggling the 'bigButton' class) and hides the unclicked tasks
+        (by toggling the 'hide' class). However, with the bug, the function was only working on <em>every other</em> list element. I believe that there
+        were others who ran into the same problem, but not really remembering the solution that had been discussed, I was scratching my head.
+      </p>
+
+      <p class="tab">
+        However, after talking to some TAs, and putting in a few console.log("blah");'s into the code, we/I realized that the problem had to do with
+        the way clickToShow(event) was triggered. The function was being trigged by a click on a button with a class called "showButton", so
+        not only was the list element I wanted being called, but <em>the list elements below with that class</em> were being called, too.
+        when clicking on a button. This meant that every other element was toggled off; the elements that were toggled off had an even number of toggles
+        attached to it, while elements that were toggled off had an odd number of toggles.
+      </p>
+
+      <p class="tab">
+        The fix was to call on the particular button that was clicked in a more particular way so that the button got toggled only once. In this case, using the
+        I used the <a href="http://api.jquery.com/find/" target="_blank">.find() method</a> to get the particular button clicked. And...it works!
+      </p>
+
+      <img class="go-middle blog-image" src="../../images/javascriptpile.jpg">
+
+</article>
