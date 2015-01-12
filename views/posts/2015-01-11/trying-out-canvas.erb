@@ -1,0 +1,104 @@
+<article>
+  
+  <h2 class="blog-title">JANUARY 11, 2015: TRYING OUT CANVAS</h2>
+  
+  <div class="content hide">
+
+    <p class="tab">
+      Happy 2015!
+    </p>
+    
+    <p class="tab">
+      Today, I'm going to talk about HTML5 Canvas, how to set it up, and guide you through code that you can use to drag and drop an object into Canvas.
+    </p>
+    
+    <p class="tab">
+      I got interested in Canvas first through <a href="http://jonaslund.biz/works/the-paintshop-biz/" target="_blank">Jonas Lund's The Paintshop.biz</a>, so
+      for my Capstone Spike, I wanted to test it out and try to figure out what I could do with it, however small.
+    </p>
+    
+    <p class="tab">
+      So first things first: use the <code>canvas</code> tag to add the Canvas element to your page, like so:
+    </p>
+    
+    <pre>
+      <code>
+        &lt;canvas id="here-is-my-canvas", height="500", width="500"&lt;/canvas&gt;
+      </code>
+    </pre>
+    
+    <p class="tab">
+      (Note: I tried to specify the height and width in the CSS, but things kept bugging out, and I gave up, but maybe you'd want to do that).
+    </p>
+    
+    <p class="tab">
+      You'll want to use <a href="http://jqueryui.com/" target="_blank">jQuery UI</a> plugins in do some cool tricks that allow you to drag and drop.
+    </p>
+    
+    <p class="tab">
+      You can do this a couple of ways, but one way to do this is by calling on Google-hosted external jQuery UI files in the head of your document. Like this:
+    </p>
+    
+    <pre>
+      <code>
+    &lt;link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" /&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js">&lt;/script&gt;
+      </code>
+    </pre>
+    
+    <p class="tab">  
+      At this point, you might consider some kind of plugin or library. In the app I made, I used <a href="http://intridea.github.io/sketch.js/" target="_blank">Sketch.js</a>
+      because I wanted users to be able to draw, among other things. I considered <a href="http://paperjs.org/" target="_blank">Paper.js</a> and <a href="http://kineticjs.com/" target="_blank">KineticJS</a>,
+      as well, but ran out of time.  
+    </p>
+    
+    <p class="tab">
+      So in my lil app, a user can sign into Twitter, and the app will grab the user's latest tweets. The tweets
+      are in unordered list, with each list element belong to the class of "tweet". 
+    </p>
+    
+    <img class="go-middle blog-image" src="../../images/tweets.png">
+    
+    <p class="tab">
+      Then in my JavaScript, I ask (force? haha) that when the document loads that the functions tweetDrag() and dropTweet() be run:</p>
+    </p>
+    
+    <img class="go-middle blog-image" src="../../images/startdroptweet.png">
+    
+    <p class="tab">
+      The function tweetDrag() uses the jQuery UI method draggable which...makes things draggable. You say "helper: clone"
+      because you don't want to drag the THING ITSELF (the tweet) but rather a copy of it, a clone, so the tweet remains in its
+      spot for reference as you drag its clone to the canvas:
+    </p>
+  
+    <img class="go-middle blog-image" src="../../images/tweetdrag.png">
+    
+    <p class="tab">
+      And now for the pièce de résistance. Haha, my not-such-a-masterpiece that glues together Stack Overflow insights (once I re-find those 
+      insights, I'll link them here):
+    </p>
+
+    <img class="go-middle blog-image" src="../../images/droptweetfunction.png">
+    
+    <p class="tab">
+      Here is what each piece/bit/whatever does:<br>
+        - .droppable makes an element "droppable" into Canvas. You use it on wherever you want it to be
+        dropped. Make sure that you make it droppable wherever it can also be dragged. I made the mistake
+        of writing "#here-is-my-canvas".droppable,"" so tweets kept disappearing whenever I moved my cursor on
+        anything but the canvas.<br>
+        - state that it can accept whatever class of items you want to be dropped. In this case, I want 
+        anything with the class of "tweet" to be able to be dropped onto Canvas.<br>
+        - the stuff after the "drop:" specifies what the thing you're dropping into Canvas is like. The
+        "var context" stuff is sort of weird, but you're basically saying "Hey! I'm dropping a 2D object
+        into Canvas!". <a href="http://diveintohtml5.info/canvas.html" target="_blank">More info here</a>.
+        - you then say that you want Canvas to be filled with the text from that draggable clone you're dropping in.
+        - the "ui.position.left - event.target.offsetLeft,ui.position.top - event.target.offsetTop" confused
+        me, but I what I think it does (and I could be wrong or not quite right) is tell it what the size of the 
+        object you're dropping in is. "ui.position.left" is where the element is relative to the offset one, 
+        "ui."
+    </p>
+    
+    <p class="tab">
+      to be fleshed out...
+    </p>
+  </article>
